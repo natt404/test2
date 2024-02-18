@@ -8,7 +8,7 @@ Dinleme işlemi, cüzdanın sahip olduğu IN token'in transferlerini, totalsuppl
 
 - API Key
     https://bscscan.com/myapikey 
-    Üyelik oluşturarak API Key alın
+    API Key alın
 
 ## Kullanım
 
