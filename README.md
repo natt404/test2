@@ -6,8 +6,8 @@ Dinleme işlemi, cüzdanın sahip olduğu IN token'in transferlerini, totalsuppl
 > Test ağında IN Token Contract'ı yaratılarak test edilmiştir. Ağ üzerinde gerçekleşen işlemlerde düzenlemeler gerekebilir.
 ## Gereksinimler
 
-- API Key
-    https://bscscan.com/myapikey 
+-   https://bscscan.com/myapikey
+  
     API Key alın
 
 ## Kullanım
