@@ -22,5 +22,34 @@ Dinleme işlemi, cüzdanın sahip olduğu IN token'in transferlerini, totalsuppl
 2. Token Sözleşme Adresi ve Dinlenecek Cüzdan Bilgilerini Ekleyin
     
     ```bash
+    //Yakım Cüzdanı
     const walletAddress = '0x0000000000000000000000000000000000000000';
     const contractAddress = '0x0f8E4a0325F8fE6FaFdfB05647bF438d4D8e1e07';
+    
+## Terminal
+```bash
+$node script.js
+            Timestamp: 1708264456
+            Block Number: 37851344
+            Hash: 0x8f5f7957554bb42947e5347281225285eb6da181e92e89beff0b476bddd4218c
+            From: 0x7839924c817e4d0470d06c8eeb1254db3c87414c
+            To: 0x0000000000000000000000000000000000000000
+            Value: 511000000000000000000
+            Total Supply: 9999937002000000000000000000
+            Circulating Supply: 9999937002000000000000000000
+
+            ------------------------------------------
+
+            Timestamp: 1708264456
+            Block Number: 37851344
+            Hash: 0x754baed587e824340e78f1b7d9682b3fa5502e1afb29e1ee01619d546d60cc7d
+            From: 0xabdc21effc3e64e88e053e3c00efa7a22974aa5a
+            To: 0x0000000000000000000000000000000000000000
+            Value: 53000000000000000000
+            Total Supply: 9999937002000000000000000000
+            Circulating Supply: 9999937002000000000000000000
+
+            ------------------------------------------
+  ```
+
+**Aynı Timestamp ve Blok Numarası olan işlemler için hash kontrol edilir. İşlemler aynı anda gerçekleştiği için Total Supply değeri güncellenen son değeri alır**
