@@ -1,10 +1,11 @@
 const {Web3} = require('web3');
-const privateKey = 'Key'; // Cüzdanın özel anahtarı
+
+
+const privateKey = 'Key'; 
 const senderAddress = "Cüzdan adresi";
+
 //Test Ağında IN token contract addresi
 const contractAddress = '0x0f8E4a0325F8fE6FaFdfB05647bF438d4D8e1e07';
-
-// ERC-20 token sözleşmesinin adresi
 
 // Web3 sağlayıcısını belirle
 const web3 = new Web3('https://bsc-testnet.publicnode.com');
@@ -39,11 +40,12 @@ const burnTokens = async (amountToBurn) => {
     const rawTransaction = {
       nonce: web3.utils.toHex(nonce),
       gasPrice: web3.utils.toHex(gasPrice),
-      gasLimit: web3.utils.toHex(300000), // Gerekirse ayarlanabilir
+      gasLimit: web3.utils.toHex(300000), // GasEstimate Kullanımı için bakıcam
       to: contractAddress,
       value: '0x0',
       data: transactionData,
-      chainId: web3.utils.toHex(97) // Ethereum ana ağı için 1, Ropsten için 3, Rinkeby için 4, vs.
+      chainId: web3.utils.toHex(97) 
+      // Ethereum ana ağı için 1, Ropsten için 3, Rinkeby için 4, vs.
     };
 
     const signedTransaction = await web3.eth.accounts.signTransaction(
