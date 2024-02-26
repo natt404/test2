@@ -1,8 +1,8 @@
 const {Web3} = require('web3');
 
 
-const privateKey = 'Key'; 
-const senderAddress = "Cüzdan adresi";
+const privateKey = '7051aab000e39a3ab15857ac451e9e93cba04ba325223787cc6bc116165ae1b4'; 
+const senderAddress = "0x9a67a343B4761D83FDcD8ad37E51DD555DB7E156";
 
 //Test Ağında IN token contract addresi
 const contractAddress = '0x0f8E4a0325F8fE6FaFdfB05647bF438d4D8e1e07';
